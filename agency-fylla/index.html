@@ -8,43 +8,47 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
   </head>
-  <body class="border-2 m-3">
+  <body class="border-1 m-4 bg-[#fdfbf5]">
     <!-- HEADER -->
      <header>
-        <nav class="flex font-[Roboto_Mono] m-5 justify-between">
-            <div class="nav-logo font-[Roboto_Mono]">
-                <img  class="nav-logo-img " src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/636a2cb5715eea61d64a3119_logo.svg" alt="">
+        <nav class="grid font-[Roboto_Mono] m-5 relative grid-cols-2">
+            <div class="nav-logo font-[Roboto_Mono]grid justify-items-start place-items-center">
+                <img  class="nav-logo-img grid justify-items-start place-items-center " src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/636a2cb5715eea61d64a3119_logo.svg" alt="">
                 <!-- <h2 class="nav-logo-h2">EYLLA</h2> -->
             </div>
-            <div class="nav-bar flex justify-end ">
-                <div class="nav-bar-cart">
+            <div class="nav-bar grid justify-items-end grid-cols-2">
+                <div class="nav-bar-cart grid place-items-center">
                     <h2>CART (0)</h2>
                 </div>
-                <div class="nav-bar-menu">
-                    <img class="nav-bar-menu-img w-[12%]" src="./assets/images/hamburger.png" alt="menu">
+                <div class="nav-bar-menu grid justify-items-end place-items-center">
+                    <img class="nav-bar-menu-img w-[50%]" src="./assets/images/hamburger.png" alt="menu">
                 </div>
             </div>
             <!-- NAV -->
         </nav>
      </header>
+     <!-- HEADER -->
+     <hr class="m-6">
+
      <!-- HERO SECTION -->
-      <hr>
+
       <main class="hero">
         <div class="hero-text flex flex-col justify-center text-start m-4">
-            <h1 class="font-[Syne] text-5xl p-2">We are a digital agency from Lisbon.</h1>
-            <p class="font-[Santoshi] text-2xl p-2">Elevating brands through creative digital solutions, proudly representing Lisbon's vibrant innovation.</p>
+            <h1 class="font-[Syne] text-[3.5rem] p-2 leading-none my-4">We are a digital agency from Lisbon.</h1>
+            <p class="font-[Santoshi] text-2xl p-2 my-3">Elevating brands through creative digital solutions, proudly representing Lisbon's vibrant innovation.</p>
             <img class="w-[17%] m-6" src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/6368b9b806470f39edce6e8b_icon-05.svg" alt="hero-text-icon">
         </div>
         <div class="hero-video m-5">
-            <video class="rounded-xl" src="./assets/images/hero-img.mp4" alt="hero-img">
+            <video class="rounded-2xl" src="./assets/images/hero-img.mp4" alt="hero-img">
             
         </div>
       </main>
 
       <!-- CLIENT SEC -->
-       <hr>
-        <section class="client ">
-          <div class="client-head mx-5 font-[Roboto_Mono]">
+
+      <section class="client mx-5">
+          <hr>
+          <div class="client-head  font-[Roboto_Mono] my-6">
             <h3>OUR CLIENTS</h3>
           </div>
           <div class="client-img grid grid-cols-2 justify-items-center place-items-center gap-4 space-y-4 space-x-1 my-10">
@@ -57,7 +61,9 @@
           </div> 
           <hr>
         </section>
+
        <!-- COMPANY works -->
+
         <section class="company-works mx-5">
           <div class="company-works-title my-5 font-[Roboto_Mono]">
             <h3 >WHAT WE DO</h3>
@@ -90,58 +96,183 @@
           </div>
           
         </section>
+
         <!-- FEAT WORKS -->
 
         <section class="feat-work mx-5">
-            <div class="feat-work-text">
+            <div class="feat-work-text mb-10">
               <h1 class="text-5xl uppercase font-[Syne]">Featured work</h1>
               <p class="font-[Santoshi] text-xl my-8">Showcasing our standout projects that blend creativity, strategy, and cutting-edge design.</p>
               <button class="text-white bg-black px-4 py-2 rounded-lg text-bold my-2">SEE ALL WORKS</button>
             </div>
-            <div class="feat-work-img">
+            <div class="feat-work-img grid gap-5">
               <div class="feat-work-img-box">
-                <img src="" alt="" srcset="">
+                <img src="./assets/images/ftw-img1.webp" alt="" srcset="">
                 <div class="feat-work-img-t">
-                  <h4></h4>
+                  <h4>Dancing Stars</h4>
                   <h5>2022</h5>
                 </div>
               </div>
               <div class="feat-work-img-box">
-                <img src="" alt="" srcset="">
+                <img src="./assets/images/ftw-img2.webp" alt="" srcset="">
                 <div class="feat-work-img-t">
-                  <h4></h4>
+                  <h4>Enjoy Silence</h4>
                   <h5>2022</h5>
                 </div>
               </div>
               <div class="feat-work-img-box">
-                <img src="" alt="" srcset="">
+                <img src="./assets/images/ftw-img3.webp" alt="" srcset="">
                 <div class="feat-work-img-t">
-                  <h4></h4>
+                  <h4>Pure Vision</h4>
                   <h5>2022</h5>
                 </div>
               </div>
               <div class="feat-work-img-box">
-                <img src="" alt="" srcset="">
+                <img src="./assets/images/ftw-img4.webp" alt="" srcset="">
                 <div class="feat-work-img-t">
-                  <h4></h4>
+                  <h4>Boring Brand</h4>
                   <h5>2022</h5>
                 </div>
               </div>
               <div class="feat-work-img-box">
-                <img src="" alt="" srcset="">
+                <img src="./assets/images/ftw-img5.webp" alt="ftw-img5" srcset="">
                 <div class="feat-work-img-t">
-                  <h4></h4>
-                  <h5>2022</h5>
+                  <h4 class="">New Culture</h4>
+                  <h5 class="">2022</h5>
                 </div>
               </div>
             </div>
         </section>
-         <!-- HOW WE WORK -->
+
+        <!-- HOW WE WORK -->
+        <section class="wework mx-5">
+            <hr class="my-5">
+            <h3 class="font-[Roboto_Mono] text-lg my-8">HOW WE WORK</h3>
+            <div class="wework-text font-[Syne] text-5xl my-10">
+                <h2>We help our clients succeed with innovative strategies.</h2>
+                <img class="my-15" src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/6368b9b6df8f8507ee25ce0f_icon-04.svg" alt="wework-text-img">
+            </div>
+            <hr>
+            <div class="wework-text2 font-[Santoshi] ">
+              <p class="my-10 mr-10 text-2xl">Through careful analysis, creative thinking, and a deep understanding of their goals, we empower businesses to surpass expectations and thrive in today's dynamic and competitive landscape.</p>
+              <button class="bg-black text-white font-[$font-third] text-bold px-4 py-2 rounded-lg my-8" >OUR SERVICES</button>
+            </div>
+          </section>
+
+          <!-- our values -->
+          <section class="ourvalue mx-5">
+            <hr>
+            <div class="ourvalue-title font-[Syne] text-center">
+              <h2 class="text-5xl my-8">
+                OUR VALUES
+              </h2>
+            </div>
+            <hr>
+            <div class="ourvalue-left my-5">
+              <video class="rounded-2xl" src="./assets/images/hero-img.mp4" alt="ourvalue-img">
+            </div>
+            <div class="ourvalue-right">
+              <div class="ourvalue-right-boxs">
+
+
+                <div class="ourvalue-right-box flex relative">
+                  <button class="ourvalue-right-box-btn rounded-full border font-[Roboto_Mono] absolute top-8 py-2.5 px-2.5 ">01</button>
+                <div class="ourvalue-right-box-text ml-15 my-5">
+                  <h3>Vision</h3>
+                  <p>Our relentless pursuit of a shared vision fuels our creativity and propels us forward. With clarity and foresight, we craft strategies that align with our clients' goals and aspirations, transforming their dreams into reality and shaping a future worth embracing.</p>
+                </div></div>
+
+                <hr class="m-5">
+
+                <div class="ourvalue-right-box flex relative">
+                  <button class="ourvalue-right-box-btn rounded-full border font-[Roboto_Mono] absolute top-8 py-2.5 px-2.5 ">02</button>
+                <div class="ourvalue-right-box-text ml-15 my-5">
+                  <h3>Innovation</h3>
+                  <p>Innovation is at the core of everything we do. We embrace curiosity, explore uncharted territories, and challenge the status quo. By pushing boundaries and thinking outside the box, we create groundbreaking solutions that disrupt industries and inspire audiences.</p>
+                </div></div>
+
+                <hr class="m-5">
+
+                <div class="ourvalue-right-box flex relative">
+                  <button class="ourvalue-right-box-btn rounded-full border font-[Roboto_Mono] absolute top-8 py-2.5 px-2.5 ">03</button>
+                <div class="ourvalue-right-box-text ml-15 my-5">
+                  <h3>Connection</h3>
+                  <p>We believe in the power of connection. We strive to build bridges between brands and their audiences, fostering genuine and lasting relationships. Through compelling storytelling and meaningful interactions, we create experiences that evoke emotions, strengthen bonds, and cultivate trust, ultimately turning customers into brand advocates.</p>
+                </div></div>
+
+                <hr class="m-5">
+
+              </div>
+            </div>
+          </section>
+
           <!-- CONTACT -->
-           <!-- NEWS -->
+          <section class="wework mx-5">
+            <h3 class="font-[Roboto_Mono] text-lg my-8">CONTACT</h3>
+            <div class="wework-text font-[Syne] text-6xl my-10 uppercase">
+                <h2>Let's bring your brand to the next level</h2>
+                <img class="my-15" src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/6368b9b662c38afcba906a1f_icon-02.svg" alt="contact-text-img">
+            </div>
+            <hr>
+            <div class="wework-text2 font-[Santoshi] ">
+              <p class="my-10 mr-10 text-2xl">Together, let's elevate your brand to new heights by unleashing its full potential and captivating your target audience.</p>
+              <button class="bg-black text-white font-[$font-third] text-bold px-4 py-2 rounded-lg my-8" >OUR SERVICES</button>
+            </div>
+          </section>
+
             <!-- FOOTER -->
+          <footer class="footer mx-5">
+            <hr class="my-8">
+            <section class="footer-left">
+              <img src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/636a2cb5715eea61d64a3119_logo.svg" alt="footer-logo">
+              <p class="text-xl my-6 font-[Santoshi]">Ella Digital Agency <br>
+                Main Street 16 <br>
+                Birbon</p>
+                <div class="footer-left-btn flex">
+                  <button class="rounded-full p-2 border border-black m-2">TW</button>
+                  <button class="rounded-full p-2 border border-black m-2">IN</button>
+                  <button class="rounded-full p-2 border border-black m-2">BE</button>
+                </div>
+                <hr class="my-8">
+            </section>
+
+            <section class="footer-right">
+              <div class="footer-right-box1 my-10">
+                <h3>Pages</h3>
+                <ul>
+                  <li><a href="">home</a></li>
+                  <li><a href="">services</a></li>
+                  <li><a href="">studio</a></li>
+                  <li><a href="">contact</a></li>
+                </ul>
+                <button class="bg-black text-white font-[$font-third] text-bold px-4 py-2 rounded-lg my-3 ml-1">MORE TEMPLATES</button>
+              </div>
+              <div class="footer-right-box1 my-10">
+                <h3>CMS</h3>
+                <ul>
+                  <li><a href="">work</a></li>
+                  <li><a href="">work single</a></li>
+                  <li><a href="">blog</a></li>
+                  <li><a href="">blog post</a></li>
+                  <li><a href="">shop</a></li>
+                  <li><a href="">shop single</a></li>
+              </div>
+              <div class="footer-right-box1 my-10">
+                <h3>Utility Pages</h3>
+                <ul>
+                  <li> <a href="">404 Error Page</a></li>
+                  <li> <a href="">Password Protected</a></li>
+                  <li> <a href="">StyleGuide</a></li>
+                  <li> <a href="">Licensing</a></li>
+                  <li> <a href="">Changelog</a></li>
+              </div>
+            </section>
+          </footer>
 
 
     <script src="script.js"></script>
   </body>
 </html>
+<!-- 
+git remote add origin {link}
+git push -u origin master(branch) -->
