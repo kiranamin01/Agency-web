@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* cyrillic-ext */
 @font-face {
   font-family: "Roboto Mono";
@@ -134,6 +136,7 @@
 
 $primary-color: #fdfbf5;
 $secondary-color: #191919;
+$secondary-color-light: #585858;
 $font-main: "Roboto Mono";
 $font-main-l: "Roboto Mono L";
 $font-secondary: "Syne";

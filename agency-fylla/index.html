@@ -8,20 +8,39 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
   </head>
-  <body class="border-1 m-4 bg-[#fdfbf5]">
+  <body class="border-1 m-4 bg-[#fdfbf5] lg:px-6">
     <!-- HEADER -->
      <header>
         <nav class="grid font-[Roboto_Mono] m-5 relative grid-cols-2">
-            <div class="nav-logo font-[Roboto_Mono]grid justify-items-start place-items-center">
+            <div class="nav-logo font-[Roboto_Mono] grid justify-items-start place-items-center">
                 <img  class="nav-logo-img grid justify-items-start place-items-center " src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/636a2cb5715eea61d64a3119_logo.svg" alt="">
                 <!-- <h2 class="nav-logo-h2">EYLLA</h2> -->
             </div>
-            <div class="nav-bar grid justify-items-end grid-cols-2">
-                <div class="nav-bar-cart grid place-items-center">
-                    <h2>CART (0)</h2>
+            <div class="nav-bar grid justify-items-end grid-cols-2 lg:flex flex-wrap justify-end text-gray-500">
+              <div class="nav-bar-nav flex items-center">
+                <ul class="flex gap-8 text-md">
+                  <li><a href="">SERVICE</a></li>
+                  <li><a href="">WORK</a></li>
+                  <li><a href="">STUDIO</a></li>
+                  <li><a href="">PAGES</a></li>
+                </ul>
+                <div class="nav-bar-cart grid place-items-center mx-10">
+                    <h2 class="text-center">CART (0)</h2>
                 </div>
-                <div class="nav-bar-menu grid justify-items-end place-items-center">
-                    <img class="nav-bar-menu-img w-[50%]" src="./assets/images/hamburger.png" alt="menu">
+              </div>
+                <div class="nav-bar-menu grid justify-items-end place-items-center lg:flex">
+                    <img class="nav-bar-menu-img w-[50%] lg:hidden" src="./assets/images/hamburger.png" alt="menu">
+                    <button class="text-white bg-black px-4 py-2 mr-2 rounded-sm text-bold text-sm">LET'S TALK</button>
+
+                    <div
+                        class="inline-block w-0.5 self-stretch bg-neutral-100 mx-2 dark:bg-black/10"></div>
+
+                    <div class="nav-left-btn flex text-sm">
+                      <button class="rounded-full p-2 border border-black m-2">TW</button>
+                      <button class="rounded-full p-2 border border-black m-2">IN</button>
+                      <button class="rounded-full p-2 border border-black m-2">BE</button>
+                    </div>
+
                 </div>
             </div>
             <!-- NAV -->
