@@ -13,11 +13,14 @@
      <header>
         <nav class="grid font-[Roboto_Mono] m-5 relative grid-cols-2">
             <div class="nav-logo font-[Roboto_Mono] grid justify-items-start place-items-center">
-                <img  class="nav-logo-img grid justify-items-start place-items-center " src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/636a2cb5715eea61d64a3119_logo.svg" alt="">
-                <!-- <h2 class="nav-logo-h2">EYLLA</h2> -->
+                <img  class="nav-logo-img grid justify-items-start place-items-center " src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/636a2cb5715eea61d64a3119_logo.svg" alt="nav-logo-img">
+               
             </div>
             <div class="nav-bar grid justify-items-end grid-cols-2 lg:flex flex-wrap justify-end text-gray-500">
-              <div class="nav-bar-nav flex items-center">
+              <div class="nav-bar-cart grid place-items-center mx-10 lg:hidden lg:mx-0">
+                <h2 class="text-center">CART (0)</h2>
+            </div>
+              <div class="hidden nav-bar-nav lg:flex items-center">
                 <ul class="flex gap-8 text-md">
                   <li><a href="">SERVICE</a></li>
                   <li><a href="">WORK</a></li>
@@ -30,12 +33,12 @@
               </div>
                 <div class="nav-bar-menu grid justify-items-end place-items-center lg:flex">
                     <img class="nav-bar-menu-img w-[50%] lg:hidden" src="./assets/images/hamburger.png" alt="menu">
-                    <button class="text-white bg-black px-4 py-2 mr-2 rounded-sm text-bold text-sm">LET'S TALK</button>
+                    <button class="hidden lg:flex text-white  bg-black px-4 py-2 mr-2 rounded-sm text-bold text-sm">LET'S TALK</button>
 
                     <div
                         class="inline-block w-0.5 self-stretch bg-neutral-100 mx-2 dark:bg-black/10"></div>
 
-                    <div class="nav-left-btn flex text-sm">
+                    <div class="nav-left-btn hidden lg:flex text-sm">
                       <button class="rounded-full p-2 border border-black m-2">TW</button>
                       <button class="rounded-full p-2 border border-black m-2">IN</button>
                       <button class="rounded-full p-2 border border-black m-2">BE</button>
@@ -47,30 +50,37 @@
         </nav>
      </header>
      <!-- HEADER -->
+
      <hr class="m-6">
 
      <!-- HERO SECTION -->
 
-      <main class="hero">
-        <div class="hero-text flex flex-col justify-center text-start m-4">
-            <h1 class="font-[Syne] text-[3.5rem] p-2 leading-none my-4">We are a digital agency from Lisbon.</h1>
-            <p class="font-[Santoshi] text-2xl p-2 my-3">Elevating brands through creative digital solutions, proudly representing Lisbon's vibrant innovation.</p>
-            <img class="w-[17%] m-6" src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/6368b9b806470f39edce6e8b_icon-05.svg" alt="hero-text-icon">
+      <main class="hero lg:grid grid-cols-2">
+        <div class="hero-text flex flex-col justify-center text-start m-4 lg:mr-65">
+            <h1 class="font-[Syne] text-[3.5rem] p-2 leading-none my-4 lg:text-7xl">We are a digital agency from Lisbon.</h1>
+            <p class="font-[Santoshi] text-2xl p-2 my-3 lg:pr-20 lg:leading-9">Elevating brands through creative digital solutions, proudly representing Lisbon's vibrant innovation.</p>
+            <img class="w-[17%] m-6 lg:w-[10%] lg:my-10" src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/6368b9b806470f39edce6e8b_icon-05.svg" alt="hero-text-icon">
         </div>
-        <div class="hero-video m-5">
-            <video class="rounded-2xl" src="./assets/images/hero-img.mp4" alt="hero-img">
+        <div class="hero-video m-5 lg:w-[49rem] lg:h-[35rem] rounded-2xl relative mb-15">
+            <video class="rounded-2xl lg:absolute w-full h-full object-cover" autoplay loop>
+             <source src="./assets/images/hero-img.mp4" type="video/mp4"> 
+            </video>
             
         </div>
       </main>
 
       <!-- CLIENT SEC -->
 
-      <section class="client mx-5">
-          <hr>
-          <div class="client-head  font-[Roboto_Mono] my-6">
+      <hr>
+      <section class="client mx-5 lg:flex items-center">
+          <div class="client-head font-[Roboto_Mono] my-6">
             <h3>OUR CLIENTS</h3>
           </div>
-          <div class="client-img grid grid-cols-2 justify-items-center place-items-center gap-4 space-y-4 space-x-1 my-10">
+          <div class="hr mx-20">
+            |
+          </div>
+          <div class="client-img grid grid-cols-2 justify-items-center place-items-center gap-4 space-y-4 space-x-1 my-10
+          lg:flex">
             <img src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/6368b9b577db5737da534831_client-01.svg" alt="client-1">
             <img src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/6368b9b6e17d1bbfc64baa20_client-02.svg" alt="client2">
             <img src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/6368b9b57a46cdb0ad27034b_client-03.svg" alt="">
@@ -78,21 +88,23 @@
             <img src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/6368b9b57a46cdfcf127034c_client-05.svg" alt="">
             <img src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/6368b9b59011170a3ae8e7fc_client-06.svg" alt="">
           </div> 
-          <hr>
         </section>
+      <hr>
 
        <!-- COMPANY works -->
 
-        <section class="company-works mx-5">
+        <section class="company-works mx-5 lg:grid grid-cols-3">
           <div class="company-works-title my-5 font-[Roboto_Mono]">
             <h3 >WHAT WE DO</h3>
           </div>
-          <div class="company-works-description text-2xl">
-            <div class="company-works-des ">
-              <img src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/6368b9b5a11997c7f3db2f2c_icon-01.svg" alt="Branding">
-              <h2>Branding</h2>
-              <p>We craft compelling brand identities that leave a lasting impression</p>
-              <hr>
+          <div class="company-works-description text-2xl lg:grid col-span-2 grid-cols-2 grid-rows-1 gap-10">
+            <div class="company-works-des-img lg:grid grid-cols-2">
+              <img class="lg:grid lg:row-span-2 place-content-center" src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/6368b9b5a11997c7f3db2f2c_icon-01.svg" alt="Branding">
+              <div class="company-works-des-text">
+                <h2 class="lg:grid">Branding</h2>
+                <p class="lg:grid">We craft compelling brand identities that leave a lasting impression</p>
+                <hr class="lg:hidden">
+              </div>
             </div>
             <div class="company-works-des">
               <img src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/6368b9b662c38afcba906a1f_icon-02.svg" alt="Design">

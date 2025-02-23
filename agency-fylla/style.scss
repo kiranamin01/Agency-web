@@ -142,19 +142,21 @@ $font-main-l: "Roboto Mono L";
 $font-secondary: "Syne";
 $font-third: "Santoshi";
 
-.company-works-des {
-  h2 {
-    font-family: $font-secondary;
-    text-transform: uppercase;
-    margin: 1rem 0;
-  }
-  p {
-    font-family: $font-third;
-    font-size: large;
-  }
-  hr {
-    padding: 0 2rem;
-    margin: 2rem 2rem;
+.company-works-des-img {
+  .company-works-des-text {
+    h2 {
+      font-family: $font-secondary;
+      text-transform: uppercase;
+      margin: 1rem 0;
+    }
+    p {
+      font-family: $font-third;
+      font-size: large;
+    }
+    hr {
+      padding: 0 2rem;
+      margin: 2rem 2rem;
+    }
   }
 }
 
